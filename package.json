@@ -1,0 +1,42 @@
+{
+  "name": "criminal-api",
+  "version": "1.0.0",
+  "description": "CRIMINAL API \u2014 developer API hub with song search",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm --prefix frontend install && npm --prefix frontend run build",
+    "heroku-postbuild": "npm --prefix frontend install && npm --prefix frontend run build",
+    "vercel-build": "npm run build"
+  },
+  "dependencies": {
+    "@ibm-generative-ai/node-sdk": "^3.2.4",
+    "@mrnima/facebook-downloader": "^1.0.0",
+    "axios": "^1.13.5",
+    "cheerio": "^1.2.0",
+    "cloudscraper": "^4.6.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.2.4",
+    "express": "^4.22.1",
+    "express-rate-limit": "^7.0.0",
+    "express-slow-down": "^3.0.1",
+    "facebook-video-downloader": "^1.0.1",
+    "firebase": "^10.0.0",
+    "form-data": "^4.0.5",
+    "helmet": "^7.0.0",
+    "hpp": "^0.2.3",
+    "mime-types": "^3.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-fetch": "^3.3.2",
+    "puppeteer-core": "^24.37.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "serverless-http": "^4.0.0",
+    "xss-clean": "^0.1.4"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
